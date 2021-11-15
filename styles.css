@@ -16,3 +16,6 @@ h3{
 body {
     background-color: grey;
   }
+.collapse navbar-collapse{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
