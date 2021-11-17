@@ -26,3 +26,25 @@ h5{
 .about{
     height: 40px;
 }
+.card{
+    background-color: black;
+    align-items: center;
+}
+
+.card-text{ 
+    color: white;
+}
+
+.lead{
+    color: darkred;
+    text:Bold
+}
+
+.col order-1{
+    align-items: 
+}
+button{
+    font-style: oblique;
+    font-variant: initial;
+    font-family: monospace;
+}
