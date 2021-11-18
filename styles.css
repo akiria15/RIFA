@@ -37,14 +37,19 @@ h5{
 
 .lead{
     color: darkred;
-    text:Bold
+    font-style: bold;
 }
 
-.col order-1{
-    align-items: 
-}
 button{
     font-style: oblique;
     font-variant: initial;
     font-family: monospace;
+}
+.card card-body{
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    align-items: center;
 }
