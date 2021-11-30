@@ -30,6 +30,7 @@ h1{
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 h5{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -41,14 +42,11 @@ h5{
     align-items: center;
     color: white;
     height: 70px;
-    
 }
 
 .card-text{ 
     color: rgb(7, 7, 7);
     height: 70px;
-    
-
 }
 
 .lead{
