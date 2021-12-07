@@ -86,3 +86,9 @@ button{
     flex-direction: row;
     display: flex;
 }
+.text{
+    background-color: white;
+}
+.col-6{
+    color: white;
+}
