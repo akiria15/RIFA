@@ -1,242 +1,278 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Home page of RIFA">
-    <meta name="author" content="Akiria, Zoe">
-    <meta name="keywords" content="RIFA, rifa, hungry, free food, donate">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>RIFA</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="data:image/jpeg;base64,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" alt="Home"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-             </li>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="howtohelp.html">How To Help</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="whatweoffer.html">What We Offer</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="needhelp.html">Need Help?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="ourgoal.html">Our Goal</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <h1 class="centered">HELLO WELCOME TO RIFA!</h1>
 
-          <div class="carousel-item active">
-            <img src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://th.bing.com/th/id/OIP.MLMuI0DpZNCA7eqIYrAaFgHaEK?w=305&h=180&c=7&r=0&o=5&pid=1.7" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://th.bing.com/th/id/OIP.I2ekZvhm6CsgIi-StvHttQHaEK?w=321&h=180&c=7&r=0&o=5&pid=1.7 class=" class="d-block w-100" alt="...">
-            
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      
-    <!-- Bootstrap Bundle with Popper -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,138.7C384,160,480,224,576,234.7C672,245,768,203,864,170.7C960,139,1056,117,1152,138.7C1248,160,1344,224,1392,256L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg> 
-<h1>“ The smallest act of kindness is worth more than the grandest intention. ” -Muhammad Ali </h1>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,138.7C384,160,480,224,576,234.7C672,245,768,203,864,170.7C960,139,1056,117,1152,138.7C1248,160,1344,224,1392,256L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-<div style="min-height: 100px;"></div>
-<div class="container">
-  <div class="row">
-  <p>
-    <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Brief Explanation
-    </button>
-  </p>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Home page of RIFA">
+  <meta name="author" content="Akiria, Zoe">
+  <meta name="keywords" content="RIFA, rifa, hungry, free food, donate">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>RIFA</title>
+</head>
 
-    <div class="collapse" id="collapseExample">
-      <div class="cardone card-body">
-        We are a non profit orginization. 
-        Our main goal is to help people in need and turm them around for the better. 
-        From the goodness of our heart, and the help from others we have assisted many people and changed lives.
-        Every day we see someone in need of food, clothing, shelter, and sometimes even a helping hand from someone.
-        We are here to be that safe haven for people.
-        We always have welcoming arms and a convenient level of understanding for anyone in need.
-      </div>
-    </div>
-
-<div class="container">
-  <div class="row">
-<div class="col align-self-start">
-  <img src="http://www.rifajackson.org/wp-content/uploads/2017/12/s_Thrift-Store-4-e1513958675284-540x300.jpg" class="img-fluid" alt="...">
-</div> 
-<div class="col align-self-center">
-  <img src="http://www.rifajackson.org/wp-content/uploads/2017/12/s_lightstock_231679_download_medium_lindsay_-e1513958512839-350x200.jpg" class="img-fluid" alt="...">
-</div>
-<div class="col align-self-end">
-  <img src="http://www.rifajackson.org/wp-content/uploads/2018/01/AdobeStock_63087506_compressed-e1516198113937-350x200.jpg" class="img-fluid" alt="...">
-</div>
-</div>
-</div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,138.7C384,160,480,224,576,234.7C672,245,768,203,864,170.7C960,139,1056,117,1152,138.7C1248,160,1344,224,1392,256L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-<p></p>
-<!-- Footer -->
-<footer class="page-footer font-small mdb-color ligh-ten-3 pt-4">
-
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left">
-
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <p>
-              <a href="#!">PROJECTS</a>
-            </p>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img
+          src="data:image/jpeg;base64,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"
+          alt="Home"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
           </li>
-          <li>
-            <p>
-              <a href="#!">ABOUT US</a>
-            </p>
           </li>
-          <li>
-            <p>
-              <a href="#!">BLOG</a>
-            </p>
+          <li class="nav-item">
+            <a class="nav-link" href="howtohelp.html">How To Help</a>
           </li>
-          <li>
-            <p>
-              <a href="#!">AWARDS</a>
-            </p>
+          <li class="nav-item">
+            <a class="nav-link" href="whatweoffer.html">What We Offer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="needhelp.html">Need Help?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ourgoal.html">Our Goal</a>
           </li>
         </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <h1 class="centered">HELLO WELCOME TO RIFA!</h1>
+
+      <div class="carousel-item active">
+        <img
+          src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://th.bing.com/th/id/OIP.MLMuI0DpZNCA7eqIYrAaFgHaEK?w=305&h=180&c=7&r=0&o=5&pid=1.7"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://th.bing.com/th/id/OIP.I2ekZvhm6CsgIi-StvHttQHaEK?w=321&h=180&c=7&r=0&o=5&pid=1.7 class="
+          class="d-block w-100" alt="...">
 
       </div>
-      <!-- Grid column -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-      <hr class="clearfix w-100 d-md-none">
+  <!-- Bootstrap Bundle with Popper -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#f3f4f5" fill-opacity="1"
+      d="M0,160L48,149.3C96,139,192,117,288,138.7C384,160,480,224,576,234.7C672,245,768,203,864,170.7C960,139,1056,117,1152,138.7C1248,160,1344,224,1392,256L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+    </path>
+  </svg>
+  <h1>“ The smallest act of kindness is worth more than the grandest intention. ” -Muhammad Ali </h1>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#f3f4f5" fill-opacity="1"
+      d="M0,160L48,149.3C96,139,192,117,288,138.7C384,160,480,224,576,234.7C672,245,768,203,864,170.7C960,139,1056,117,1152,138.7C1248,160,1344,224,1392,256L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+    </path>
+  </svg>
+  <div style="min-height: 100px;"></div>
+  <div class="container">
+    <div class="row">
+      <p>
+        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+          aria-expanded="false" aria-controls="collapseExample">
+          Brief Explanation
+        </button>
+      </p>
 
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-
-        <!-- Contact details -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <p>
-              <i class="fas fa-home mr-3"></i> 133 Airways Blvd, Jackson, Tn 38301 </p>
-          </li>
-          <li>
-            <p>
-              <i class="fas fa-envelope mr-3"></i>info@rifajackson.org</p>
-          </li>
-          <li>
-            <p>
-              <i class="fas fa-phone mr-3"></i> 731-427-7963 </p>
-          
-
+      <div class="collapse" id="collapseExample">
+        <div class="cardone card-body">
+          We are a non profit orginization.
+          Our main goal is to help people in need and turm them around for the better.
+          From the goodness of our heart, and the help from others we have assisted many people and changed lives.
+          Every day we see someone in need of food, clothing, shelter, and sometimes even a helping hand from someone.
+          We are here to be that safe haven for people.
+          We always have welcoming arms and a convenient level of understanding for anyone in need.
+        </div>
       </div>
-      <!-- Grid column -->
 
+      <div class="container">
+        <div class="row">
+          <div class="col align-self-start">
+            <img src="http://www.rifajackson.org/wp-content/uploads/2017/12/s_Thrift-Store-4-e1513958675284-540x300.jpg"
+              class="img-fluid" alt="...">
+          </div>
+          <div class="col align-self-center">
+            <img
+              src="http://www.rifajackson.org/wp-content/uploads/2017/12/s_lightstock_231679_download_medium_lindsay_-e1513958512839-350x200.jpg"
+              class="img-fluid" alt="...">
+          </div>
+          <div class="col align-self-end">
+            <img
+              src="http://www.rifajackson.org/wp-content/uploads/2018/01/AdobeStock_63087506_compressed-e1516198113937-350x200.jpg"
+              class="img-fluid" alt="...">
+          </div>
+        </div>
+      </div>
+      <p></p>
+      <!-- Footer -->
+      <footer class="page-footer font-small mdb-color ligh-ten-3 pt-4">
 
-     
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
-        <ul class="list-unstyled">
-          <li>
-            <p><!-- Social buttons -->
-              <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5></p>
-            </li>
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
 
-            <li>
-              <p> <!-- Facebook -->
-                <a type="button" class=" ">
-                  <i class="https://www.facebook.com/rifajackson/">Facebook</i>
-                </a></p>
+          <!-- Grid row -->
+          <div class="row">
+
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <p>
+                    <a href="#!">PROJECTS</a>
+                  </p>
                 </li>
                 <li>
-                  <p> <!-- Twitter -->
-        <a type="button" class=" ">
-          <i class="https://twitter.com/rifajackson?lang=en"> Twitter</i>
-        </a></p>
-        </li>
-        <li>
-          <p> <!-- Instagram -->
-<a type="button" class=" ">
-  <i class="https://www.instagram.com/rifajackson/"> Instagram</i>
-</a></p>
-</li>
+                  <p>
+                    <a href="#!">ABOUT US</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="#!">BLOG</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="#!">AWARDS</a>
+                  </p>
+                </li>
+              </ul>
 
-<li>
-  <p> <!-- Youtube -->
-    <a type="button" class=" ">
-      <i class="https://www.youtube.com/channel/UC9iGGfGBchEhu3hDOMTl7sQ">Youtube</i>
-    </a></p>
-    </li>
-       
-</ul>
-      </div>
-      <!-- Grid column -->
+            </div>
+            <!-- Grid column -->
 
-    </div>
-    <!-- Grid row -->
+            <hr class="clearfix w-100 d-md-none">
 
-  </div>
-  <!-- Footer Links -->
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2021 RIFA:
-    <a href="http://www.rifajackson.org/"> Regional Inter-Faith Association</a>
-  </div>
-  <!-- Copyright -->
+              <!-- Contact details -->
+              <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
 
-</footer>
-<!-- Footer -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+              <ul class="list-unstyled">
+                <li>
+                  <p>
+                    <i class="fas fa-home mr-3"></i> 133 Airways Blvd, Jackson, Tn 38301 </p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-envelope mr-3"></i>info@rifajackson.org</p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-phone mr-3"></i> 731-427-7963 </p>
+
+
+            </div>
+            <!-- Grid column -->
+
+
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+              <ul class="list-unstyled">
+                <li>
+                  <p>
+                    <!-- Social buttons -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <!-- Facebook -->
+                    <a type="button" class=" ">
+                      <i class="https://m.facebook.com/rifajackson/">Facebook</i>
+                    </a></p>
+                </li>
+                <li>
+                  <p>
+                    <!-- Twitter -->
+                    <a type="button" class=" ">
+                      <i class="https://twitter.com/rifajackson?lang=en"> Twitter</i>
+                    </a></p>
+                </li>
+                <li>
+                  <p>
+                    <!-- Instagram -->
+                    <a type="button" class=" ">
+                      <i class="https://www.instagram.com/rifajackson/"> Instagram</i>
+                    </a></p>
+                </li>
+
+                <li>
+                  <p>
+                    <!-- Youtube -->
+                    <a type="button" class=" ">
+                      <i class="https://www.youtube.com/channel/UC9iGGfGBchEhu3hDOMTl7sQ">Youtube</i>
+                    </a></p>
+                </li>
+
+              </ul>
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 RIFA:
+          <a href="http://www.rifajackson.org/"> Regional Inter-Faith Association</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+      </script>
 </body>
-  
+
 </html>
